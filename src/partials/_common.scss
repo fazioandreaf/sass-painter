@@ -1,0 +1,8 @@
+@mixin my-display-flex{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+@mixin padding-left-right{
+        padding: 0 10%;
+}

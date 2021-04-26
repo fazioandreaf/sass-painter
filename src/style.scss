@@ -1,28 +1,49 @@
 // font family
 
 @import "partials/_header";
+@import "partials/_common";
 
 
-
-@mixin my-display-flex{
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    body{
+    .container{
         header{
+            @include my-display-flex;
+
+            @include padding-left-right;
             background-color: $header-color;
             height: 100px;
-        };
-        nav{
-            @include my-display-flex;
-            
+            flex-direction: column;
+            .social{
+                align-self: end;
+            }
+            nav{
+                @include my-display-flex;
+                font-size: 0.7rem;
+                flex-grow: 1;
+                ul{
+                    text-align: center;
+                    height: 25%;
+                    @include my-display-flex;
+                    list-style-type: none  ;
+                    img{
+                        width: 100%;
+                    }
+                    li{
+                        width: 20%;
+                        align-self: center;
+                    }
+                }
+            };
         };
         main{
+            .jumbo{
+                height: 400px;
+                background-image: url(img/bg-painter-home.jpg);
+                background-size: cover;
+            }
             background-color: yellow
         }
 

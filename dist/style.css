@@ -3,13 +3,39 @@
   padding: 0;
   box-sizing: border-box;
 }
-* body header {
+* .container header {
+  display: flex;
+  padding: 0 10%;
   background-color: rgba(10, 10, 10, 0.5);
   height: 100px;
+  flex-direction: column;
 }
-* body nav {
+* .container header .social {
+  align-self: end;
+}
+* .container header nav {
   display: flex;
+  font-size: 0.7rem;
+  flex-grow: 1;
 }
-* body main {
+* .container header nav ul {
+  text-align: center;
+  height: 25%;
+  display: flex;
+  list-style-type: none;
+}
+* .container header nav ul img {
+  width: 100%;
+}
+* .container header nav ul li {
+  width: 20%;
+  align-self: center;
+}
+* .container main {
   background-color: yellow;
+}
+* .container main .jumbo {
+  height: 400px;
+  background-image: url(img/bg-painter-home.jpg);
+  background-size: cover;
 }
