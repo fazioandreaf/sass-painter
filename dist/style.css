@@ -44,13 +44,14 @@
 }
 * .container main .jumbo .jumbo_description {
   display: flex;
+  padding: 0 10%;
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;
-  width: 40%;
+  width: 50%;
 }
 * .container main .jumbo .jumbo_description img {
-  width: 100%;
+  width: 50%;
 }
 * .container main .jumbo .jumbo_description div:nth-child(1) {
   display: flex;
@@ -65,17 +66,22 @@
 * .container main .jumbo .jumbo_description div:nth-child(2) span {
   text-transform: capitalize;
 }
-* .container main .jumbo .jumbo_description div:nth-child(3) {
+* .container main .btn-black {
   text-transform: uppercase;
-}
-* .container main .jumbo .jumbo_description div:nth-child(3) span {
   padding: 1rem;
-}
-* .container main .jumbo .jumbo_description div:nth-child(3) span:first-child {
   color: white;
   background-color: black;
 }
-* .container main .jumbo .jumbo_description div:nth-child(3) span:nth-child(2) {
+* .container main .btn-white {
+  text-transform: uppercase;
+  padding: 1rem;
   color: black;
   background-color: white;
+}
+* .container footer {
+  position: relative;
+  display: flex;
+}
+* .container footer .picSocial {
+  position: absolute;
 }

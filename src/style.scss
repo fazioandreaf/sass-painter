@@ -47,12 +47,14 @@
                 background-position: right;
                 .jumbo_description{
                     @include my-display-flex;
+                    @include padding-left-right;
+
                     flex-direction: column;
                     justify-content: space-evenly;
                     height: 100%;
-                    width: 40%;
+                    width: 50%;
                     img{
-                        width: 100%;
+                        width: 50%;
                     };
                     div:nth-child(1){
                         @include my-display-flex;
@@ -68,29 +70,33 @@
                             @include capitalize;
                         }
                     }
-                    div:nth-child(3) {
-                        @include uppercase;
-                        span{
-                            @include padding-tot;
-                        }
-                    }
-                    div:nth-child(3) span:first-child{
-                        color: white;
-                        background-color: black;
-                    }
-                    div:nth-child(3) span:nth-child(2){
-                        color: black;
-                        background-color: white;
-                    }
 
 
                 }
 
             };
-        
-            background-color: yellow
-        }
+            background-color: yellow;
+            .btn-black{
+                @include uppercase;
+                @include padding-tot;
+                color: white;
+                background-color: black;
+            };
+            .btn-white{
+                @include uppercase;
+                @include padding-tot;
+                color: black;
+                background-color: white;
+            };
 
+        }
+        footer{
+            position: relative;
+            @include my-display-flex;
+            .picSocial{
+                position: absolute
+            }
+        }
 
 
 
