@@ -2,7 +2,21 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-}
+};
 @mixin padding-left-right{
         padding: 0 10%;
-}
+};
+@mixin margin-top-bottom {
+    margin:10px 0;
+};
+@mixin padding-tot {
+    padding: 1rem;
+};
+@mixin capitalize {
+    text-transform:capitalize;
+};
+@mixin uppercase {
+    text-transform:uppercase;
+};
+
+$main-color:white;

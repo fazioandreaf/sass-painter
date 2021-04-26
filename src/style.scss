@@ -10,8 +10,8 @@
     box-sizing: border-box;
     .container{
         header{
+            color: $main-color;
             @include my-display-flex;
-
             @include padding-left-right;
             background-color: $header-color;
             height: 100px;
@@ -32,6 +32,7 @@
                         width: 100%;
                     }
                     li{
+                        @include capitalize;
                         width: 20%;
                         align-self: center;
                     }
@@ -43,7 +44,50 @@
                 height: 400px;
                 background-image: url(img/bg-painter-home.jpg);
                 background-size: cover;
-            }
+                background-position: right;
+                .jumbo_description{
+                    @include my-display-flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    height: 100%;
+                    width: 40%;
+                    img{
+                        width: 100%;
+                    };
+                    div:nth-child(1){
+                        @include my-display-flex;
+                        flex-direction: column;
+                    }
+
+                    div:nth-child(2){
+                        color:#de7ead ;
+                        h5{
+                            font-style: italic;
+                        }
+                        span{
+                            @include capitalize;
+                        }
+                    }
+                    div:nth-child(3) {
+                        @include uppercase;
+                        span{
+                            @include padding-tot;
+                        }
+                    }
+                    div:nth-child(3) span:first-child{
+                        color: white;
+                        background-color: black;
+                    }
+                    div:nth-child(3) span:nth-child(2){
+                        color: black;
+                        background-color: white;
+                    }
+
+
+                }
+
+            };
+        
             background-color: yellow
         }
 

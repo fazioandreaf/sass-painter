@@ -1,4 +1,6 @@
 function init(){
-    console.log('ciao');
+//    let cosa=document.getElementsByClassName('provaa');
+//    console.log(typeof(cosa));
+    
 }
 init()
