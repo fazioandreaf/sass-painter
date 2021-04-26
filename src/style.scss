@@ -1,13 +1,26 @@
 // font family
 
+@import "partials/_header";
 
+
+
+@mixin my-display-flex{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     body{
-        head{
-            background-color: green
+        header{
+            background-color: $header-color;
+            height: 100px;
+        };
+        nav{
+            @include my-display-flex;
+            
         };
         main{
             background-color: yellow
